@@ -8,8 +8,8 @@
     "start": "yarn run build && node dist/server.js",
     "seed:run": "./node_modules/.bin/knex seed:run",
     "seed:make": "./node_modules/.bin/knex seed:make $@",
-    "create:db": "node scripts/create-db",
-    "delete:db": "node scripts/delete-db",
+    "create:db": "ts-node scripts/create-db",
+    "delete:db": "ts-node scripts/delete-db",
     "test:create:db": "NODE_ENV=test yarn create:db",
     "test": "npx jest"
   },

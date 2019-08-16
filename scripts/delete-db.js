@@ -1,6 +1,6 @@
 'use strict';
 
-const config = require('../knexfile.ts');
+const config = require('../knexfile');
 
 const { connection: { database } } = config;
 delete config.connection.database;
