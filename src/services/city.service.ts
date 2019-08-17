@@ -9,5 +9,10 @@ export const cityService = {
 
     getCity(id: string): Promise<ICity> {
         return db.select('id', 'name', 'cityId', 'provinceId').from<Cities>('city').where('id', id).first();
+    },
+
+    getCitiesByProvinceId(provinceId: string): Promise<Cities> {
+        return db.select('id', 'name', 'cityId', 'provinceId').from<Cities>('city').where('provinceId', provinceId);
     }
+
 }
