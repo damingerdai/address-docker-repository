@@ -6,6 +6,8 @@
   "scripts": {
     "build": "npx webpack",
     "start": "yarn run build && node dist/server.js",
+    "lint": "npx tslint --project tsconfig.json --config tslint.json",
+    "lint-fix": "npx tslint --fix --project tsconfig.json --config tslint.json -t verbose",
     "seed:run": "./node_modules/.bin/knex seed:run",
     "seed:make": "./node_modules/.bin/knex seed:make $@",
     "create:db": "ts-node scripts/create-db",
@@ -38,6 +40,7 @@
     "jest": "^24.8.0",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
     "typescript": "^3.5.3",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.6",
