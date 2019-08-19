@@ -3,11 +3,10 @@ import { camelCase, snakeCase } from './src/lib/changeCase';
 const environment = process.env.NODE_ENV || 'development';
 const dbName = process.env.MYSQL_DB_NAME || 'address';
 
-
 const specialChars = ['*'];
 
 const convertToCase = (val: any, func: (data: any) => any) => {
-	if (specialChars.includes(val)) return val;
+	if (specialChars.includes(val)) { return val; }
 
 	return func(val);
 };
