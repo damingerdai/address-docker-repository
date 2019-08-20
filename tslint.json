@@ -1,4 +1,7 @@
 {
+    "rulesDirectory": [
+        "tools/tslint/rules"
+    ],
     "defaultSeverity": "error",
     "extends": [
         "tslint:recommended"
@@ -11,9 +14,7 @@
         "quotemark": [true, "single", "avoid-escape", "avoid-template"],
         "trailing-comma": [true, { "multiline": "never", "singleline": "never" }],
         "indent": [true, "tabs", 2],
-        "semicolon": [true,"always"]
-    },
-    "rulesDirectory": [
-        "tools/tslint/rules"
-    ]
+        "semicolon": [true,"always"],
+        "no-chinese-character": [true]
+    }
 }
