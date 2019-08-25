@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx webpack",
+    "build": "npx webpack -p",
     "start": "yarn run build && node dist/server.js",
     "lint": "npx tslint --project tsconfig.json --config tslint.json",
     "lint-fix": "npx tslint --fix --project tsconfig.json --config tslint.json -t verbose",
