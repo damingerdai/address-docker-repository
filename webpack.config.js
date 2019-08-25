@@ -8,7 +8,8 @@ module.exports = {
   entry: {
     server: "./server.ts"
   },
-  target: "node",
+	target: "node",
+	devtool: 'inline-source-map',
   output: {
     filename: "[name].js",
     libraryTarget: "commonjs2"
